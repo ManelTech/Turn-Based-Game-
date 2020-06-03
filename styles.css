@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+html,h1,h2,h4,h5,p,text{
+  font-family: "Open+Sans&display";
+}
+h1{
+  color: white;
+  padding: 30px;
+}
+body{
+  background-color: #262626;
+}
+#weaponbox{
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+#player1box{
+  background-color: white;
+  border-radius: 15px;
+
+}
+#player2box{
+  background-color: white;
+  border-radius: 15px;
+}
+#box h2{
+  font-size: 5em;
+  text-align: center;
+  color: white;
+  line-height: 0.85;
+  margin: 0 auto;
+  width: 2.75em;
+}
+#box h5{
+  font-size: 2em;
+  text-align: center;
+  color: white;
+}
+#playAgain{
+  font-size: 2em;
+  text-align: center;
+  background: #F451EB;
+  border-radius: 28px;
+  color: white;
+  margin-left: 200px;
+  border: none;
+}
+#gamerules, #newgame{
+  font-size: 1.5em;
+  text-align: center;
+  background: #F451EB;
+  border-radius: 28px;
+  color: white;
+  border: none;
+}
+.container{
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+  grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+}
+.grid_item {
+  background-color: white ;
+  display: flex;
+  border: solid grey;
+}
+.obstacle {
+  background-image: url("images/tree.png");
+}
+.weaponsword {
+  background-image: url("images/weaponsword.png");
+}
+.weapongun {
+  background-image: url("images/weapongun.png");
+}
+.weaponmace {
+  background-image: url("images/weaponmace.png");
+}
+.weaponpike {
+  background-image: url("images/weaponpike.png");
+}
+.weapondagger {
+  background-image: url("images/weapondagger.jpg");
+}
+.range{
+  background-color: yellow;
+}
+.player1 {
+  background-image: url("images/player1.png");
+}
+.player2 {
+  background-image: url("images/player2.jpg");
+}

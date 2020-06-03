@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="text-center ">Battle of Winterfell </h1>
+            </div>
+        </div>
+        <div class="row d-flex align-items-center">
+            <div class="col-sm-3 text-center">
+                <button type="button" id="newgame">New Game</button>
+            </div>
+            <div class="col-sm-6 text-center" id="weaponbox">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h5>Pike</h5>
+                        <img src='images/weaponpike.png' alt="Pike">
+                        <p>Damage: 20</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Sword</h5>
+                        <img src='images/weaponsword.png' alt="Sword">
+                        <p>Damage: 30</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Mace</h5>
+                        <img src='images/weaponmace.png' alt="Mace">
+                        <p>Damage: 40</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Gun</h5>
+                        <img src='images/weapongun.png' alt="Gun">
+                        <p>Damage: 50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 text-center">
+                <button type="button" id="gamerules">Game Rules</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3" id="player1box">
+                <div class="player1_information">
+                    <h3 class="text-center"> The Night King</h3>
+                    <img src="images/player1info.jpg">
+                    <h6> Damage</h6>
+                    <p id="damagep1"></p>
+                    <h6>Life Points</h6>
+                    <p id="lifePointsp1"></p>
+                    <button type="button" value="Attack" class="btn btn-danger" id="P1Attack" disabled>Attack</button>
+                    <button type="button" value="Defend" class="btn btn-success" id="P1Defend" disabled>Defend</button>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="container-fluid" id="box">
+                    <div class="container" id="gameBoard">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3" id="player2box">
+                <div class="player2_information">
+                    <h3 class="text-center"> Arya Stark </h3>
+                    <img src="images/player2info2.png">
+                    <h6> Damage</h6>
+                    <p id="damagep2"> </p>
+                    <h6>Life Points</h6>
+                    <p id="lifePointsp2"></p>
+                    <button type="button" value="Attack" class="btn btn-danger" id="P2Attack" disabled>Attack</button>
+                    <button type="button" value="Defend" class="btn btn-success" id="P2Defend" disabled>Defend</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts.js">
+    </script>
+</body>
+</html>
